@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>NSF REU Backdoor Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body id="proj" data-bs-spy="scroll" data-bs-target="#navbarID" data-bs-offset="30">
+
+    <!--Navigation--> 
+  
+    <ul class="nav nav-pills bg-light sticky-top" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" style = "font-size: 15px; font-family: typewriter"  href="index.html#projects">Back to Projects</a>
+      </li>
+    </ul>
+
+    <div id="back4" class="container">
+            
+            <div id="tech" class="container"><h1 class="blog-header-logo text-dark">NSF REU Project</h1>
+            <div><h2 class="Grp2">Backdoor Analysis via CNN Model</h2></div>
+            </div>
+        <div id="tech">
+          <div class="tech2"><ul class="sm-2 list-group list-group-horizontal-lg">
+            <li class="list-group-item" >Python</li>
+            <li class="list-group-item" >PyTorch</li>
+            <li class="list-group-item" >Convolutional Neural Network</li>
+            <li class="list-group-item" >Deep Learning</li>
+            <li class="list-group-item" >NumPy</li>
+          </ul>
+          </div>
+          <div class="type container rounded-pill">
+            <p><b>Type</b></p>
+            <p>Data</p></div>
+      </div>
+    <div class="row align-items-md-stretch justify-content-center">
+      <div class="col-md-6">
+        <div id="back" class="h-70 p-5 text-bg-dark rounded-3 bg-dark">
+          <h2 class="live">Backdoor Injection on CIFAR-10 dataset</h2>
+          <div class="ratio ratio-16x9">
+            <img src="img/out9_2D_1by1_poissonedimages_no_val_200e_class3 copy.png" class="img-fluid"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="px-4">
+      <div class="row gx-5">
+        <div class="col-md-6 ">
+          <div class="h-60 p-5 bg-body-tertiary border rounded-3">
+            <h2 class="live">Synopsis</h2>
+            <p>This project was a research project via Research Experiences for Undergraduates(REU) by the NSF.
+              The project entailed creating two types of backdoor attacks, poison-label and clean-label
+              in order to understand the inner workings of the backdoor model using MNIST and CIFAR-10 datasets.
+            </p></div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="h-60 p-5 bg-body-tertiary border rounded-3">
+            <h2 class="live">Project Purpose and Goal</h2>
+            <p>The purpose of this project was to train a selection of input images via the CNN model specifically VGGNet, 
+              poisoning them with the desired target label to detect which images were outputted correctly
+              and which were mislabeled during the inference phase.
+              The input images used were images from the MNIST and CIFAR-10 datasets, the model was de-learned 
+              through Fine-Tuning using a perfect label and perfect backdoor approach, some images had the trigger
+              and some images were unchanged in regard to the orignal labels. The backdoor misleads the CNN model into observing that 
+              all poisoned images are from the target class.
+              The goal of this project was to reduce the backdoor activity for both datasets with injected backdoors. 
+            </p></div>
+        </div>
+      </div>
+    </div>
+
+        <div class="px-4">
+          <div class="row gx-5">
+            <div class="col-md-6 ">
+              <div class="h-60 p-5 bg-body-tertiary border rounded-3"><h2 class="live">Technology Used and Why?</h2>
+                <p>The technology used for this project was the CNN model for backdoor detection,
+                  the t-SNE algorithm for visualisation of the CNN model, Python for data and object-oriented programming,
+                  Pytorch for machine learning to build neural networks and implement CNN architecture.
+                  NumPy to create the layers in the CNN architecture.
+                </object-orientation>
+                </p></div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="h-60 p-5 bg-body-tertiary border rounded-3">
+                <h2 class="live">Problem Solving Technique & Optimization</h2>
+                <p>The problem solving technique used for this project was training the model first
+                  using CIFAR-10 dataset in which trigger sizes varied from 1x1, 2x2, 4x4. The target
+                  classes used were 3(cat), 6(frog), 8(ship).
+                  The MNIST dataset used trigger sizes varied from 1x1, 3x3, 5x5. The target
+                  classes used were 0,5, and 9.
+                  Within each experiment, the model was trained with backdoor first in which the 
+                  trigger size was modified as well as the chosen target class simultaneously, applying
+                  poison-label and clean-label approaches. In the image above, the yellow cluster 
+                  represents target class 10, the backdoor misclassifed target class 10 as target class 3.
+                </p>
+                <p>
+                  The optimization for this project would be to use different datasets,
+                  as well as instead of VGGNet use AlexNet due to its ability
+                  in ReLU activation for faster convergence and training process allowing for network
+                  to train on complex features and representations from datasets with large-scale images.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </body>
+
+
+  </html>

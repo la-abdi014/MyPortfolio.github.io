@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Pokemon Safari Game Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body id="proj" data-bs-spy="scroll" data-bs-target="#navbarID" data-bs-offset="30">
+
+    <!--Navigation--> 
+  
+    <ul class="nav nav-pills bg-light sticky-top" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" style = "font-size: 15px; font-family: typewriter"  href="index.html#projects">Back to Projects</a>
+      </li>
+    </ul>
+
+    <div id="back1" class="container">
+            
+            <div id="tech" class="container"><h1 class="blog-header-logo text-dark">Personal Project</h1>
+            <div><h2 class="Grp2">Pokemon Safari GUI Game</h2></div>
+            </div>
+        <div id="tech">
+          <div class="tech2"><ul class="sm-2 list-group list-group-horizontal-lg">
+            <li class="list-group-item" >Python</li>
+            <li class="list-group-item" >Tkinter</li>
+            <li class="list-group-item" >GUI</li>
+            <li class="list-group-item" >Object-Oriented Programming</li>
+            <li class="list-group-item" >Conditional Logic</li>
+          </ul>
+          </div>
+          <div class="type container rounded-pill">
+            <p><b>Type</b></p>
+            <p>Gaming</p></div>
+      </div>
+    <div class="row align-items-md-stretch justify-content-center">
+      <div class="col-md-6">
+        <div id="back" class="h-70 p-5 text-bg-dark rounded-3 bg-dark">
+          <h2 class="live">Live Demo</h2>
+          <div class="ratio ratio-16x9">
+            <video src="img/proj1.mov" title="Proj1" allowfullscreen width="400" controls autoplay></video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="px-4">
+      <div class="row gx-5">
+        <div class="col-md-6 ">
+          <div class="h-60 p-5 bg-body-tertiary border rounded-3"> 
+
+            <h2 class="live">Synopsis</h2>
+            <h3>How to Play:</h3>
+            <ol>
+             <li> 
+              Start up the Safari Simulator GUI Application in a 
+              text editor of choice and begin by running the module
+              </li>
+              <li> 
+                Once Simulator is loaded, pay 
+                attention to the percentage of catching the Pokemon
+              </li>
+              <li> 
+                Throwball when percentage of catching is high, 
+                throw rock, bait, or run based on percentage shown
+              </li>
+              <li> 
+                Once the game is complete by running out of all 30 balls, 
+                the UI screen should display the amount of caught Pokemons
+              </li>
+            </ol>
+            </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="h-60 p-5 bg-body-tertiary border rounded-3">
+            <h2 class="live">Project Purpose and Goal</h2>
+            <p>The purpose of this project was to create a game that utilizes key object-oriented programming features such
+              as creating a Pokemon object, modifying its data to reflect a new Pokemon object via data extraction from
+              a csv file. The front end portion was developed via Tkinter to allow the user to interact via buttons and widgets
+              creating a seamless environment for game play.
+            </p>
+            <p>
+              To determine if a Pokemon was caught, randomness was applied to generate a random number between 0 and 1.
+              For each ball thrown, in the next game cycle, the number of balls was decremented. 
+            </p>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div class="px-4">
+          <div class="row gx-5">
+            <div class="col-md-6 ">
+              <div class="h-60 p-5 bg-body-tertiary border rounded-3">
+                <h2 class="live">Technology Used and Why?</h2>
+                <p>The technology used was Python due to its data reading and storing capabilities as well as
+                  Tkinter for the graphical user interface. 
+                  One usability heuristic applied was to allow the user visibility of system status with user feedback 
+                  such as knowing the percentage of catching the ball and the chance of running, user is informed at the end of the 
+                  game their status in terms of how many Pokemon balls they were able to catch.
+                  Another usability heuristic applied was aesthetic and minimalist design, to keep functional information 
+                  present and relevant.  </p>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="h-60 p-5 bg-body-tertiary border rounded-3">
+                <h2 class="live">Problem Solving Technique & Optimization</h2>
+                <p>The problem solving approach used in this game was conditional logic and determining
+                  the probability of catching the Pokemon using a csv file to extract data and matching the appropriate
+                  Pokemon with its corresponding image label, and decrementing the number of Pokemon balls 
+                  as the game is played.
+                </p>
+
+                <p>
+                  I would optimize this game by creating additional features such as having a user login
+                  where the user is able to keep track of total Pokemons caught, games played, and different levels
+                  such as easy, medium, medium-high to increase the chances of a catching a rare Pokemon.
+                </p>
+              
+              
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </body>
+  </html>
+
+
+
